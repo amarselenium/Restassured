@@ -14,9 +14,9 @@ public class Utils {
 
     //Sets Base URI
     public static void setBaseURI() {
-        RestAssured.baseURI = "http://services.groupkt.com/country/get/iso2code";
+        RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1/employee";
     }
-
+    
     //Sets base path
     public static void setBasePath(String basePathTerm) {
         RestAssured.basePath = basePathTerm;
@@ -50,7 +50,8 @@ public class Utils {
     //Returns response
     public static Response getResponse() {
         //System.out.print("path: " + path +"\n");
-        return get(path);
+        return get(path,"jgfijgi");
+        
     }
 
     //Returns JsonPath object
